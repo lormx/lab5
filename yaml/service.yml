@@ -1,0 +1,64 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: '2021-04-27T21:31:21Z'
+  labels:
+    service.beta.kubernetes.io/hash: aee4a03bbdc0dbe259ec586b3d6175ba959823eda70e75bc4d6dc5a3
+  managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:externalTrafficPolicy': {}
+          'f:ports':
+            .: {}
+            'k:{"port":80,"protocol":"TCP"}':
+              .: {}
+              'f:name': {}
+              'f:port': {}
+              'f:protocol': {}
+              'f:targetPort': {}
+          'f:selector':
+            .: {}
+            'f:app': {}
+          'f:sessionAffinity': {}
+          'f:type': {}
+      manager: Apache-HttpClient
+      operation: Update
+      time: '2021-04-27T21:31:21Z'
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            .: {}
+            'f:service.beta.kubernetes.io/hash': {}
+        'f:status':
+          'f:loadBalancer':
+            'f:ingress': {}
+      manager: cloud-controller-manager
+      operation: Update
+      time: '2021-04-27T21:31:30Z'
+  name: oahub-default-svc
+  namespace: default
+  resourceVersion: '3017'
+  selfLink: /api/v1/namespaces/default/services/oahub-default-svc
+  uid: 72792d70-fa12-420e-996a-37fc90128012
+spec:
+  clusterIP: 192.168.94.29
+  externalTrafficPolicy: Local
+  healthCheckNodePort: 31439
+  ports:
+    - name: api-port
+      nodePort: 30175
+      port: 80
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    app: oahub-default
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+      - ip: 161.117.183.77
