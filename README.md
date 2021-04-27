@@ -8,7 +8,7 @@ description: "This code is part of the Microsoft Learn module of the AKS worksho
 urlFragment: "aksworkshop-ratings-api"
 ---
 
-# DevOps Workshop - Deploy API to Kubernetes sample code
+# DevOps Workshop - Deploy API to Kubernetes
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
