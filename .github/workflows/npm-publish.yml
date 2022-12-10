@@ -77,10 +77,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: docker:latest
+    timeout-minutes: 60
     needs: build-and-push
     services:
       docker:dind:
-        image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        image: ghcr.io/oaviles/apid:master
     steps: 
     - run: |
         echo "Testing Image published on GitHub Regitsry" 
