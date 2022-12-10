@@ -84,5 +84,5 @@ jobs:
         image: ghcr.io/oaviles/apid:master
     steps: 
     - run: |
-        echo "Testing Image published on GitHub Regitsry" 
+        echo "Testing Image published on GitHub Registry" 
         echo "Image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} passed test"
