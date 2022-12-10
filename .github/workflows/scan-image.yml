@@ -1,5 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 # https://github.com/marketplace/actions/test-container-image-scan
+# https://learn.microsoft.com/en-us/azure/container-registry/github-action-scan
 
 name: Scan Image
 
